@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/implicit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Implicit Intent"
+        android:textColor="#FF0000"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <Button
+        android:text="Telepon"
+        android:id="@+id/btnpgl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/implicit"
+        android:layout_marginTop="15pt"
+        android:onClick="panggil"/>
+
+    <Button
+        android:text="Buka Browser"
+        android:id="@+id/btnbuka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnpgl"
+        android:layout_marginTop="5pt"
+        android:onClick="buka"/>
+
+    <TextView
+        android:id="@+id/explicit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnbuka"
+        android:text="Explicit Intent"
+        android:textColor="#FFDD00"
+        android:textSize="10pt"
+        android:layout_marginTop="15pt"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <Button
+        android:text="Tentang Aplikasi"
+        android:id="@+id/btninfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/explicit"
+        android:layout_marginTop="5pt"
+        android:onClick="tentang"/>
+
+</RelativeLayout>
